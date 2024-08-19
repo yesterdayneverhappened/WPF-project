@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="asd" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-6GOK52D\SQLEXPRESS;Initial Catalog=asd;Integrated Security=True" SettingsObjectName="Курсач.Properties.Settings" SettingsPropertyName="asdConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Author" Member="tbl_Author">
+    <Type Name="tbl_Author">
+      <Column Name="AuthorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AuthorName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Author_tbl_Books" Member="tbl_Books" ThisKey="AuthorID" OtherKey="AuthorID" Type="tbl_Books" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Books" Member="tbl_Books">
+    <Type Name="tbl_Books">
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AuthorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GenreID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Prise" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriseStart" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Books_tbl_OrderTY" Member="tbl_OrderTY" ThisKey="BookID" OtherKey="BookID" Type="tbl_OrderTY" />
+      <Association Name="tbl_Author_tbl_Books" Member="tbl_Author" ThisKey="AuthorID" OtherKey="AuthorID" Type="tbl_Author" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="tbl_Genre_tbl_Books" Member="tbl_Genre" ThisKey="GenreID" OtherKey="GenreID" Type="tbl_Genre" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="tbl_Img_tbl_Books" Member="tbl_Img" ThisKey="ImageID" OtherKey="ImageID" Type="tbl_Img" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Genre" Member="tbl_Genre">
+    <Type Name="tbl_Genre">
+      <Column Name="GenreID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GenreName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Genre_tbl_Books" Member="tbl_Books" ThisKey="GenreID" OtherKey="GenreID" Type="tbl_Books" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Img" Member="tbl_Img">
+    <Type Name="tbl_Img">
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ImageName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Img_tbl_Books" Member="tbl_Books" ThisKey="ImageID" OtherKey="ImageID" Type="tbl_Books" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_OrderTY" Member="tbl_OrderTY">
+    <Type Name="tbl_OrderTY">
+      <Column Name="OrderID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PriseAll" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Oplacheno" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DataOrder" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Books_tbl_OrderTY" Member="tbl_Books" ThisKey="BookID" OtherKey="BookID" Type="tbl_Books" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="tbl_Users_tbl_OrderTY" Member="tbl_Users" ThisKey="UserID" OtherKey="UserID" Type="tbl_Users" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Users" Member="tbl_Users">
+    <Type Name="tbl_Users">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Street" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="Password_User" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Balanse" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Blocked" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="BalanseReq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Users_tbl_OrderTY" Member="tbl_OrderTY" ThisKey="UserID" OtherKey="UserID" Type="tbl_OrderTY" />
+    </Type>
+  </Table>
+</Database>

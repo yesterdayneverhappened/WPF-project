@@ -1,0 +1,36 @@
+﻿<Page x:Class="Курсач.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Курсач"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="Page1" Width="1100">
+
+    <Grid x:Name="Pagers" Width="1100" Background="#FFFFE3BA">
+
+        <Label x:Name="counter" Content="Кол-во купленных книг: " HorizontalAlignment="Left" Margin="557,375,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.018,-0.229" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Неоплаченные заказы: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Книги в прокате:" HorizontalAlignment="Left" Margin="282,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Grid Margin="10,47,833,10" x:Name="TrueOpl">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Label Content="Название:                                  Цена: " Margin="9,9,9,352"/>
+
+            </Border>
+        </Grid>
+        <Grid Margin="282,47,556,10" x:Name="FalseOpl">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Label Content="Название:                                  Цена: " Margin="9,9,9,352"/>
+            </Border>
+        </Grid>
+        <Label Content="Последняя купленная книга" HorizontalAlignment="Left" Margin="557,13,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="250" Margin="564,61,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="q" Content="Книга" HorizontalAlignment="Left" Margin="736,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,-0.254" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="_2" Content="Автор: " HorizontalAlignment="Left" Margin="736,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,-0.254" FontSize="14" Foreground="#FF5F5F5F"/>
+        <Label x:Name="_3" Content="Жанр: " HorizontalAlignment="Left" Margin="736,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,-0.254" FontSize="14" Foreground="#FF5F5F5F"/>
+        <Label x:Name="w_Copy" Content="Автор: " HorizontalAlignment="Left" Margin="786,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,-0.254" FontSize="14" Foreground="#FF5F5F5F"/>
+        <Label x:Name="e_Copy" Content="Жанр: " HorizontalAlignment="Left" Margin="782,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,-0.254" FontSize="14" Foreground="#FF5F5F5F"/>
+
+    </Grid>
+</Page>

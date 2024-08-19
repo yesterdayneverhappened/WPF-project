@@ -1,0 +1,21 @@
+﻿<Page x:Class="Курсач.Busket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Курсач"
+      mc:Ignorable="d"
+      Title="Busket" Height="436" Width="1100">
+
+    <Grid Background="#FFFFFBD6" Width="1100">
+
+        <ScrollViewer x:Name="scroll5" Height="auto" VerticalAlignment="Top" Margin="2,0,24,0">
+
+            <Grid x:Name="InGrid" Width="790">
+                <Label Content="Купленные книги " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="45" Width="209" FontSize="22" FontWeight="Bold"/>
+            </Grid>
+
+        </ScrollViewer>
+
+    </Grid>
+</Page>

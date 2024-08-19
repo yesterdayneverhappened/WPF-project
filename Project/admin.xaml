@@ -1,0 +1,35 @@
+﻿<Window x:Class="Курсач.admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсач"
+        mc:Ignorable="d"
+        Title="admin" Height="540" Width="1022">
+    <Grid Margin="0,0,0,-6">
+        <Grid Margin="0,0,0,466" Background="#FFFF8D8D">
+            <Button Content="Добавление книги" HorizontalAlignment="Left" Margin="494,0,0,0" VerticalAlignment="Center" Height="38" Width="129" Click="Button_Click"/>
+            <Button Content="Блокировка/разблокировка" HorizontalAlignment="Left" Margin="628,0,0,0" VerticalAlignment="Center" Height="38" Width="178" Click="Button_Click_1"/>
+            <Button Content="Пополнение счёта" HorizontalAlignment="Left" VerticalAlignment="Center" Height="38" Width="118" Margin="371,0,0,0"/>
+            <Button Content="" HorizontalAlignment="Left" Margin="837,0,0,0" VerticalAlignment="Center" Height="38" Width="56" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="/free-icon-shopping-bag-6948578.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" HorizontalAlignment="Left" Margin="898,0,0,0" VerticalAlignment="Center" Height="38" Width="56" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/free-icon-user-10246202.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="" HorizontalAlignment="Left" Margin="959,0,0,0" VerticalAlignment="Center" Height="38" Width="56" Click="Button_Click_4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/free-icon-book-8417473.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Запросы" HorizontalAlignment="Left" Margin="284,0,0,0" VerticalAlignment="Center" Height="38" Width="82" Click="Button_Click_5"/>
+        </Grid>
+        <Grid Margin="0,64,0,0">
+            <Frame Name="ADMIN" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Window>

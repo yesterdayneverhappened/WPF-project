@@ -1,0 +1,126 @@
+﻿<Page x:Class="Курсач.OpenShop"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Курсач"
+      mc:Ignorable="d"
+      Title="OpenShop" Height="1544" Width="1124">
+    <ScrollViewer x:Name="scroll" Margin="0,0,37,1020">
+        <Grid Height="1370" Background="#FFFFF8D6" Width="1092" x:Name="GRIIIDE">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <Image HorizontalAlignment="Left" Height="217" Margin="26,62,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b1" Content="Книга" HorizontalAlignment="Left" Margin="179,62,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a1" Content="Автор: " HorizontalAlignment="Left" Margin="179,98,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g1" Content="Жанр:  " HorizontalAlignment="Left" Margin="179,129,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="179,245,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click" />
+            <Label x:Name="p1" Content="Цена: " HorizontalAlignment="Left" Margin="179,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            <Label x:Name="b2" Content="Книга" HorizontalAlignment="Left" Margin="532,64,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image HorizontalAlignment="Left" Height="217" Margin="379,64,0,0" VerticalAlignment="Top" Width="138" Stretch="Fill"/>
+            <Label x:Name="a2" Content="Автор: " HorizontalAlignment="Left" Margin="532,98,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g2" Content="Жанр: " HorizontalAlignment="Left" Margin="531,129,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="530,245,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_1"/>
+            <Label x:Name="p2" Content="Цена: " HorizontalAlignment="Left" Margin="532,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            <Label x:Name="b3" Content="Книга" HorizontalAlignment="Left" Margin="878,59,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image x:Name="_3" HorizontalAlignment="Left" Height="217" Margin="734,62,0,0" VerticalAlignment="Top" Width="138" Stretch="Fill"/>
+            <Label x:Name="a3" Content="Автор: " HorizontalAlignment="Left" Margin="878,93,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g3" Content="Жанр: " HorizontalAlignment="Left" Margin="877,124,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="878,245,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_2" RenderTransformOrigin="0.461,-0.37"/>
+            <Label x:Name="p3" Content="Цена: " HorizontalAlignment="Left" Margin="877,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            <Image HorizontalAlignment="Left" Height="217" Margin="26,314,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b4" Content="Книга" HorizontalAlignment="Left" Margin="179,312,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a4" Content="Автор: " HorizontalAlignment="Left" Margin="179,348,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g4" Content="Жанр:  " HorizontalAlignment="Left" Margin="179,379,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="179,495,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_3"/>
+            <Label x:Name="p4" Content="Цена: " HorizontalAlignment="Left" Margin="179,464,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            
+            <Label x:Name="b5" Content="Книга" HorizontalAlignment="Left" Margin="531,314,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image HorizontalAlignment="Left" Height="217" Margin="378,314,0,0" VerticalAlignment="Top" Width="138" Stretch="Fill"/>
+            <Label x:Name="a5" Content="Автор: " HorizontalAlignment="Left" Margin="531,348,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g5" Content="Жанр: " HorizontalAlignment="Left" Margin="530,379,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="531,495,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_4"/>
+            <Label x:Name="p5" Content="Цена: " HorizontalAlignment="Left" Margin="531,464,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            <Image HorizontalAlignment="Left" Height="217" Margin="724,314,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b6" Content="Книга" HorizontalAlignment="Left" Margin="877,312,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a6" Content="Автор: " HorizontalAlignment="Left" Margin="877,348,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g6" Content="Жанр:  " HorizontalAlignment="Left" Margin="877,379,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="878,495,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_5"/>
+            <Label x:Name="p6" Content="Цена: " HorizontalAlignment="Left" Margin="877,464,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            <Image HorizontalAlignment="Left" Height="217" Margin="26,582,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b7" Content="Книга" HorizontalAlignment="Left" Margin="179,580,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a7" Content="Автор: " HorizontalAlignment="Left" Margin="179,616,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g7" Content="Жанр:  " HorizontalAlignment="Left" Margin="179,647,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p7" Content="Цена: " HorizontalAlignment="Left" Margin="179,732,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="532,763,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_7" />
+            
+            <Label x:Name="b8" Content="Книга" HorizontalAlignment="Left" Margin="531,582,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image HorizontalAlignment="Left" Height="217" Margin="378,582,0,0" VerticalAlignment="Top" Width="138" Stretch="Fill"/>
+            <Label x:Name="a8" Content="Автор: " HorizontalAlignment="Left" Margin="531,616,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g8" Content="Жанр: " HorizontalAlignment="Left" Margin="530,647,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p8" Content="Цена: " HorizontalAlignment="Left" Margin="530,732,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+            
+
+            <Image HorizontalAlignment="Left" Height="217" Margin="724,582,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b9" Content="Книга" HorizontalAlignment="Left" Margin="877,580,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a9" Content="Автор: " HorizontalAlignment="Left" Margin="877,616,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g9" Content="Жанр:  " HorizontalAlignment="Left" Margin="877,647,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p9" Content="Цена: " HorizontalAlignment="Left" Margin="877,732,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="179,763,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_6" />
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="878,763,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_8" />
+            <Image HorizontalAlignment="Left" Height="217" Margin="26,855,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b10e1" Content="Книга" HorizontalAlignment="Left" Margin="179,853,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a10e1" Content="Автор: " HorizontalAlignment="Left" Margin="179,889,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g10e1" Content="Жанр:  " HorizontalAlignment="Left" Margin="179,920,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p10e1" Content="Цена: " HorizontalAlignment="Left" Margin="179,1005,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="179,1036,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_9" />
+            <Image HorizontalAlignment="Left" Height="217" Margin="393,850,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b10" Content="Книга" HorizontalAlignment="Left" Margin="546,848,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a10" Content="Автор: " HorizontalAlignment="Left" Margin="546,884,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g10" Content="Жанр:  " HorizontalAlignment="Left" Margin="546,915,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p10" Content="Цена: " HorizontalAlignment="Left" Margin="546,1000,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+
+
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="546,1031,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_10" />
+            <Image HorizontalAlignment="Left" Height="217" Margin="724,855,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b12" Content="Книга" HorizontalAlignment="Left" Margin="877,853,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a12" Content="Автор: " HorizontalAlignment="Left" Margin="877,889,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g12" Content="Жанр:  " HorizontalAlignment="Left" Margin="877,920,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p12" Content="Цена: " HorizontalAlignment="Left" Margin="877,1005,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="877,1036,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_11" />
+            <Image HorizontalAlignment="Left" Height="216" Margin="26,1124,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b10e1_Copy" Content="Книга" HorizontalAlignment="Left" Margin="179,1122,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a10e1_Copy" Content="Автор: " HorizontalAlignment="Left" Margin="179,1158,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g10e1_Copy" Content="Жанр:  " HorizontalAlignment="Left" Margin="179,1188,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p10e1_Copy" Content="Цена: " HorizontalAlignment="Left" Margin="179,1274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="179,1304,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_12" />
+            <Image HorizontalAlignment="Left" Height="216" Margin="393,1124,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b10e1_Copy1" Content="Книга" HorizontalAlignment="Left" Margin="546,1122,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a10e1_Copy1" Content="Автор: " HorizontalAlignment="Left" Margin="546,1158,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g10e1_Copy1" Content="Жанр:  " HorizontalAlignment="Left" Margin="546,1188,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p10e1_Copy1" Content="Цена: " HorizontalAlignment="Left" Margin="546,1274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="546,1304,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_14" />
+            <Image HorizontalAlignment="Left" Height="216" Margin="724,1124,0,0" VerticalAlignment="Top" Width="147" Stretch="Fill"/>
+            <Label x:Name="b10e1_Copy2" Content="Книга" HorizontalAlignment="Left" Margin="877,1122,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.6,-0.07"/>
+            <Label x:Name="a10e1_Copy2" Content="Автор: " HorizontalAlignment="Left" Margin="877,1158,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="g10e1_Copy2" Content="Жанр:  " HorizontalAlignment="Left" Margin="877,1188,0,0" VerticalAlignment="Top" Foreground="Gray"/>
+            <Label x:Name="p10e1_Copy2" Content="Цена: " HorizontalAlignment="Left" Margin="877,1274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.654" Foreground="#FF51C348"/>
+            <Button Content="В корзину" HorizontalAlignment="Left" Margin="877,1304,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="Button_Click_15" />
+
+            <Button Content="&gt;" HorizontalAlignment="Center" Margin="0,1350,0,0" VerticalAlignment="Top" Height="20" Width="24" Click="Button_Click_R"/>
+        </Grid>
+    </ScrollViewer>
+</Page>

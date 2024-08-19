@@ -1,0 +1,51 @@
+﻿<Window x:Class="Курсач.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсач"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="610" Width="1100">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ScrollTrumbs" TargetType="{x:Type Thumb}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid x:Name="Grid">
+                                <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto"/>
+                                <Border x:Name="Retangle" CornerRadius="10"></Border>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Tag" Value="Horizontal">
+                                    <Setter TargetName="Retangle" Property="Width" Value="auto"/>
+                                    <Setter TargetName="Retangle" Property="Height" Value="7"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid x:Name="grid" RenderTransformOrigin="0.5,0.5" Background="#FFFFF8D6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#4C000000">
+            <Button Content="Корзина" HorizontalAlignment="Left" Margin="852,0,0,0" VerticalAlignment="Center" Height="22" Width="74" Click="Button_Click"/>
+            <Button x:Name="user" Content="Профиль" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="22" Width="61" Click="user_Click"/>
+            <Label x:Name="_balanse" Content="Кошелёк " HorizontalAlignment="Left" Margin="71,0,0,0" VerticalAlignment="Center" Height="24" Width="108"/>
+            <Button x:Name="back" Content="&lt;-" HorizontalAlignment="Left" Margin="827,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.073,-0.026" Width="20" Click="back_Click"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="690,0,0,0" VerticalAlignment="Center" Width="92" Click="Button_Click_1"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="216,0,0,0" VerticalAlignment="Center" Click="Button_Click_3" Width="26" FontWeight="Bold"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Frame Name="LOL" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+
+    </Grid>
+
+</Window>
